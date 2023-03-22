@@ -1,12 +1,18 @@
 package pl.zajavka.case2;
 
-record Person(String name, String surname) {
+import java.math.BigDecimal;
 
-    public String whatIsYourJob() {
-        return "Software developer!";
+record Person(String name, Long age, BigDecimal salary) {
+
+    public Boolean doYouHaveABike() {
+        return true;
     }
 
-    public String whatDoYouLike() {
-        return "Strawberries";
+    public Boolean doYouLikePizza() {
+        return true;
+    }
+
+    public BigDecimal howMuchDoYouEarn() {
+        return salary;
     }
 }
