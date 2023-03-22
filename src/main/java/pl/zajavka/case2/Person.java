@@ -4,15 +4,15 @@ import java.math.BigDecimal;
 
 record Person(String name, Long age, BigDecimal salary) {
 
-    public BigDecimal howMuchDoYouEarn() {
-        return salary;
+    public Boolean doYouHaveABike() {
+        return true;
     }
 
     public Boolean doYouLikePizza() {
         return true;
     }
 
-    public Boolean doYouHaveABike() {
-        return true;
+    public BigDecimal howMuchDoYouEarn() {
+        return salary;
     }
 }
